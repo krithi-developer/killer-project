@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:lato,sans-serif;
+}
+html{
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('Omnifood Contents/hero.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;   
+    font-size: 20px;
+}
+.hero-text-box{
+    position: absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:white !important;
+    font-size:240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+.btn:link,
+.btn:visited
+{
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+    background-color:rgb(190, 25, 121) ;
+    color:white;
+    border:1px solid orange;
+    border-radius: 25px;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]
+{
+    background-color:rgb(235, 47, 156) ;
+}
+.btn-ghost:link,
+.btn-ghost:visited,
+input[type=submit]
+{
+    color:rgb(190, 25, 121);
+    border:1px solid orange;
+    border-radius: 200px;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type=submit]
+{
+    background-color:rgb(235, 47, 156);
+    color:white;    
+}
+/*nav-bar*/
+.logo{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    margin: 30px;
+}
+.main-nav{
+    float:right;
+    list-style-type:none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom:2px solid transparent;
+    padding: 8px 0px;
+    transition: border-bottom 0.2;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid rgb(190, 25, 121);
+}
+/*end-nav-bar*/
+/*features section*/
+.section-features{
+    
+    background-color:rgb(218, 216, 216);
+    font-size:20px;
+    font-weight: 300;
+}
+section{
+    padding:80px 0;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: rgb(190, 25, 121) ;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top:30px ;
+}
+.section-features p{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.container{
+    margin-top: 50px;
+}
+h3{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+.container p{
+    margin: 0;
+}
+.big{
+    color:rgb(190, 25, 121) ;
+    font-size:80px;      
+}
+/*meals*/
+.section-meals{
+    background-color: rgb(218, 216, 216);
+}
+.meal-photo{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    
+}
+.meal-photo img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+    height:200px;
+    
+}
+.meal-photo img:hover{
+    opacity: 1;
+}
+.col.size {
+    padding: 0;
+}
+/*how it works*/
+.section-steps{
+    background-color: rgb(245, 240, 240);
+}
+.works{
+    padding:40px;   
+}
+.works-step{
+    margin-bottom:50px ;
+}
+.works-step div{
+    background-color: khaki;
+    display: inline-block;
+    color: rgb(190, 25, 121);
+    border: 4px solid rgb(190, 25, 121);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+    margin-left: 50px;
+    transform: translate(-300%);
+}
+.section-steps img{
+    border-radius:10px;
+    transform: translate(100%);
+    box-shadow: 5px 5px 5px 5px rgb(75, 75, 75);
+}
+.works-step p{
+    font-size: 20px;
+    transform: translate(-20%);
+}
+.btn-app img{
+    height: 50px;
+    width: 150px;
+    margin:10px;
+    transform: translate(10%);
+    
+}
+.btn-app:link,
+.btn-app:visited{
+    border-bottom: 0;
+}
+/*cities*/
+.section-cities{
+    font-size: 20px;
+    background-color: rgb(247, 247, 244);
+}
+.section-cities img{
+    height:200px;
+    width:500px;
+    box-shadow: 3px 3px 3px 3px rgb(179, 178, 178);  
+}
+.col h3{
+    padding-top: 25px;
+}
+.city-feature{
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.small{
+    display:inline-block;
+    width: 30px;
+    text-align: center;
+    color:rgb(190, 25, 121);
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: hidden;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+a:link,
+a:visited{
+    color:rgb(190, 25, 121);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(190, 25, 121) ;
+}
+a:hover{
+    color:rgb(197, 36, 36);
+    border-bottom: 1px solid transparent;
+}
+/*testimonial*/
+.section-testimonial{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("Omnifood Contents/back-customers.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25%;
+
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote::before{
+    content:'\201c';
+    font-size: 500%;
+    display: block;
+    position:absolute;
+    top:0;
+    left:-3px
+}
+/*signup*/
+.section-plans{
+    background-color: paleturquoise;
+ }
+ .plan-box{
+     background-color: #fff;
+     border-radius: 5px;
+     width: 90%;
+     margin-left: 5%;
+ }
+ .plan-box div{
+     padding: 15px;
+     border-bottom: 1px solid #e8e8e8;
+ }
+ .plan-price{
+     font-size:300%;
+     margin-bottom: 10px;
+     font-weight: 100;
+     color:rgb(190, 25, 121);
+ }
+ .plan-price-meal{
+     font-size: 80%;
+ }
+ .plan-box ul{
+     list-style-type: none;
+ }
+ .plan-box ul li{
+     padding: 5px 0px;
+ }
+ .plan-box div:last-child{
+     border: 0;
+     text-align: center;
+ }
+ .plan-box div:first-child{
+     background-color: rgb(245, 245, 245);
+     border-top-left-radius:5px;
+ }
+ /*contact form*/
+.contact-form{
+    width: 80%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 3px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+}
+select{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 3px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+}
+textarea{
+    height: 100%;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0px;
+}
+label{
+    margin-left:40px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    border-radius: 30px;
+}
+/*footer*/
+footer{
+    background-color: #3b3b3b;
+    font-size: 80%;
+    padding: 50px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color:#f7efef;
+}
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color: #f0ebeb;
+}
+footer p{
+    color: #eee6e6;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+.fb:hover{
+    color: palevioletred;
+}
+.twitter:hover{
+    color: palevioletred;
+}
+.google:hover{
+    color: palevioletred;
+}
+.insta:hover{
+    color: palevioletred;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+    color:#f0ebeb;
+}
